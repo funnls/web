@@ -11,16 +11,20 @@
 		"format": "prettier --write \"./src/**/*.{js,svelte,html,ts}\"",
 		"lint": "eslint  \"./src/**/*.{js,ts,svelte}\"",
 		"lint:fix": "eslint --fix \"./src/**/*.{js,ts,svelte}\"",
-		"precommit": "npm run format && npm run lint:fix"
+		"pre-commit": "npm run format && npm run lint:fix",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "1.0.0-next.30",
 		"@tsconfig/svelte": "2.0.1",
 		"@typescript-eslint/eslint-plugin": "^5.32.0",
 		"@typescript-eslint/parser": "^5.32.0",
+		"commitlint": "^17.0.3",
 		"eslint": "^8.21.0",
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
 		"svelte": "3.44.0",
